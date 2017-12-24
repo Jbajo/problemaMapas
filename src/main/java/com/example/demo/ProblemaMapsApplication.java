@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 /**
  * 
- * @author Javier Bajo Chacon
+ * @author Javier Bajo Chacon  javier.bajochacon@gmail.com
  *
  */
 public class ProblemaMapsApplication {

@@ -6,10 +6,9 @@ import java.util.Map;
 
 /**
  * 
- * @author Javier Bajo Chacon
+ * @author Javier Bajo Chacon  javier.bajochacon@gmail.com
  *
  */
-
 public class Listas{
 	
 	/**
