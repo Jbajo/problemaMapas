@@ -13,7 +13,7 @@ public class Listas{
 	
 	/**
 	 * 
-	 * @param numeroEnString
+	 * @param numeroEnString numero a parsear
 	 * @return true o false si parseable a int
 	 */
 	public static boolean esParseable(String numeroEnString){

@@ -37,8 +37,7 @@ public class ProblemaMapsApplication {
 		System.out.println("------------------");
 		listaParseable = Listas.parsearLista(listaDeStrings);
 		Listas.imprimirElementos(listaParseable);
-		
-			
+					
 		}
 	}
 
