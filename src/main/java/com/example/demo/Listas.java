@@ -10,11 +10,11 @@ import java.util.Map;
  *
  */
 
-public class Cadenas {
+public class Listas{
 	
 	/**
 	 * 
-	 * @param numeroEnString se pasa un numero en String
+	 * @param numeroEnString
 	 * @return true o false si parseable a int
 	 */
 	public static boolean esParseable(String numeroEnString){
@@ -27,54 +27,44 @@ public class Cadenas {
 		}
 	
 	/**
+	 * 
 	 * @param listaDeStrings lista con todos los Strings a parsear
 	 * @return lista parseada
 	 */
 	public static ArrayList<String> parsearLista(List<String> listaDeStrings) {
 		
 		ArrayList<String> listaParseada = new ArrayList<>();
-		ArrayList <Character> listaCompara = new ArrayList<> ();
-		
-		listaCompara.add('0');
-		listaCompara.add('1');
-		listaCompara.add('2');
-		listaCompara.add('3');
-		listaCompara.add('4');
-		listaCompara.add('5');
-		listaCompara.add('6');
-		listaCompara.add('7');
-		listaCompara.add('8');
-		listaCompara.add('9');
-
-		
+				
 		for (String string : listaDeStrings) {
 			for(int j=0; j<string.length();j++)
-			if(Cadenas.esParseable(String.valueOf(string.charAt(j)))&&listaCompara.contains(string.charAt(j))) {
+			if(Listas.esParseable(String.valueOf(string.charAt(j)))) {
 				listaParseada.add(String.valueOf(string.charAt(j)));				
 				
 			}		
 			
-		}		
-		
+		}				
 		return listaParseada;
 	
 	}
 	
 	/**
-	 * @param mapDeStrings mapa de Strings con los elementos a añaadir en la lista
-	 * @param listaDeStrings lista con los elementos ya añadidos
+	 * 
+	 * @param mapDeStrings mapa de Strings con los elementos a añadir en la lista
+	 * @param lista en la que se añadirán los elementos
 	 */
 	
 	public static void aniadirElementosLista (Map<String, String> mapDeStrings, List<String> listaDeStrings) {
 		
-		mapDeStrings.forEach((k,v)->listaDeStrings.add(k+","+v));
+		mapDeStrings.forEach((k,v)->listaDeStrings.add(k + "," +v));	
 		
 	}
 	
 	/**
+	 * 
 	 * @param listaDeStrings lista de Strings a imprimir
 	 */
 	public static void imprimirElementos(List<String> listaDeStrings) {
+	
 		listaDeStrings.forEach((k)->System.out.println(k));
 	}
 

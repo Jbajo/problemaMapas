@@ -9,6 +9,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+/**
+ * 
+ * @author Javier Bajo Chacon
+ *
+ */
 public class ProblemaMapsApplication {
 
 	public static void main(String[] args) {
@@ -27,10 +32,12 @@ public class ProblemaMapsApplication {
 		
 		List<String> listaParseable = new ArrayList<>();
 		
-		Cadenas.aniadirElementosLista(mapDeStrings, listaDeStrings);
-		Cadenas.imprimirElementos(listaDeStrings);		
-		listaParseable = Cadenas.parsearLista(listaDeStrings);
-		listaParseable.forEach((k)->System.out.println("item parseable " + k));
+		Listas.aniadirElementosLista(mapDeStrings,listaDeStrings); 	
+		Listas.imprimirElementos(listaDeStrings);		
+		System.out.println("------------------");
+		listaParseable = Listas.parsearLista(listaDeStrings);
+		Listas.imprimirElementos(listaParseable);
+		
 			
 		}
 	}
