@@ -33,6 +33,7 @@ public class ProblemaMapsApplication {
 		List<String> listaParseable = new ArrayList<>();
 		
 		Listas.aniadirElementosLista(mapDeStrings,listaDeStrings); 	
+		System.out.println("------------------");
 		Listas.imprimirElementos(listaDeStrings);		
 		System.out.println("------------------");
 		listaParseable = Listas.parsearLista(listaDeStrings);

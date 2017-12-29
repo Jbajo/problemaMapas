@@ -30,9 +30,9 @@ public class Listas{
 	 * @param listaDeStrings lista con todos los Strings a parsear
 	 * @return lista parseada
 	 */
-	public static ArrayList<String> parsearLista(List<String> listaDeStrings) {
+	public static List<String> parsearLista(List<String> listaDeStrings) {
 		
-		ArrayList<String> listaParseada = new ArrayList<>();
+		List<String> listaParseada = new ArrayList<>();
 				
 		for (String string : listaDeStrings) {
 			for(int j=0; j<string.length();j++)
@@ -54,7 +54,12 @@ public class Listas{
 	
 	public static void aniadirElementosLista (Map<String, String> mapDeStrings, List<String> listaDeStrings) {
 		
-		mapDeStrings.forEach((k,v)->listaDeStrings.add(k + "," +v));	
+	/*	for (String string : mapDeStrings.keySet()) {
+			listaDeStrings.add(string +","+ mapDeStrings.get(string));
+			
+		}*/
+		
+	mapDeStrings.forEach((k,v)->listaDeStrings.add(k + "," +v));	
 		
 	}
 	
