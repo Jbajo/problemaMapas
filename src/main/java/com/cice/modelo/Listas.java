@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.cice.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,7 +54,7 @@ public class Listas{
 	
 	public static void aniadirElementosLista (Map<String, String> mapDeStrings, List<String> listaDeStrings) {
 		
-	/*	for (String string : mapDeStrings.keySet()) {
+	/*	for (String string : mapDeStrings.keySet(string)) {
 			listaDeStrings.add(string +","+ mapDeStrings.get(string));
 			
 		}*/
